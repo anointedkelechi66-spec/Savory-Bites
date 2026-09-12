@@ -1134,3 +1134,433 @@ img {
     }
 
 }
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+
+/* =========================================
+   TABLETS & SMALL LAPTOPS
+   901px - 1100px
+========================================= */
+
+@media (max-width: 1100px) {
+
+    .navbar {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .hero {
+        padding-left: 25px;
+        padding-right: 25px;
+        gap: 40px;
+    }
+
+    .hero h1 {
+        font-size: 54px;
+    }
+
+    .hero-card {
+        width: 330px;
+        min-height: 330px;
+    }
+
+    .menu-grid {
+        padding: 0 10px;
+    }
+
+}
+
+
+/* =========================================
+   TABLETS
+   651px - 900px
+========================================= */
+
+@media (max-width: 900px) {
+
+    /* Navigation */
+
+    .navbar {
+        padding: 16px 25px;
+    }
+
+    .nav-links {
+        gap: 18px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+
+    /* Hero */
+
+    .hero {
+        min-height: auto;
+        padding: 70px 25px;
+
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 700px;
+    }
+
+    .hero h1 {
+        font-size: 52px;
+    }
+
+    .hero-text {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-card {
+        width: 100%;
+        max-width: 400px;
+        min-height: 350px;
+    }
+
+
+    /* Menu */
+
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+
+    /* Features */
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        max-width: 550px;
+    }
+
+
+    /* Contact */
+
+    .contact-info {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE PHONES
+   481px - 650px
+========================================= */
+
+@media (max-width: 650px) {
+
+    /* General */
+
+    body {
+        overflow-x: hidden;
+    }
+
+
+    /* Navigation */
+
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-button {
+        padding: 9px 15px;
+        font-size: 13px;
+    }
+
+
+    /* Hero */
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 43px;
+        line-height: 1.15;
+    }
+
+    .hero-text {
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .primary-button,
+    .secondary-button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-card {
+        width: 100%;
+        min-height: 300px;
+        padding: 30px 20px;
+        border-radius: 25px;
+    }
+
+    .food-icon {
+        font-size: 75px;
+    }
+
+
+    /* Sections */
+
+    .menu-section,
+    .about-section,
+    .features-section,
+    .contact-section {
+        padding: 70px 20px;
+    }
+
+    .section-heading {
+        margin-bottom: 35px;
+    }
+
+    .section-heading h2,
+    .about-content h2 {
+        font-size: 34px;
+    }
+
+
+    /* Menu Categories */
+
+    .menu-categories {
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+
+    .menu-categories button {
+        padding: 8px 16px;
+        font-size: 13px;
+    }
+
+
+    /* Menu */
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+        padding: 0;
+        gap: 20px;
+    }
+
+    .menu-card {
+        width: 100%;
+    }
+
+    .menu-image {
+        height: 220px;
+    }
+
+    .menu-content {
+        padding: 22px;
+    }
+
+    .menu-title {
+        align-items: flex-start;
+    }
+
+    .menu-title h3 {
+        font-size: 19px;
+    }
+
+    .menu-title strong {
+        font-size: 17px;
+    }
+
+
+    /* Features */
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-card {
+        padding: 30px 20px;
+    }
+
+
+    /* Contact */
+
+    .contact-info {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .contact-item {
+        padding: 25px 20px;
+    }
+
+
+    /* Footer */
+
+    .footer {
+        padding: 25px 20px;
+        font-size: 14px;
+    }
+
+}
+
+
+/* =========================================
+   SMALL PHONES
+   320px - 480px
+========================================= */
+
+@media (max-width: 480px) {
+
+    /* Navigation */
+
+    .navbar {
+        padding: 14px 15px;
+    }
+
+    .logo {
+        font-size: 21px;
+    }
+
+    .nav-button {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+
+
+    /* Hero */
+
+    .hero {
+        padding: 50px 15px;
+    }
+
+    .subtitle {
+        font-size: 11px;
+        letter-spacing: 1.5px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero-text {
+        font-size: 15px;
+    }
+
+    .hero-card {
+        min-height: 280px;
+        padding: 25px 15px;
+    }
+
+    .hero-card h2 {
+        font-size: 22px;
+    }
+
+    .food-icon {
+        font-size: 65px;
+    }
+
+
+    /* Sections */
+
+    .menu-section,
+    .about-section,
+    .features-section,
+    .contact-section {
+        padding: 55px 15px;
+    }
+
+    .section-heading h2,
+    .about-content h2 {
+        font-size: 30px;
+    }
+
+
+    /* Menu */
+
+    .menu-image {
+        height: 200px;
+    }
+
+    .menu-content {
+        padding: 20px;
+    }
+
+    .menu-title {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .menu-title h3 {
+        font-size: 18px;
+    }
+
+    .menu-content p {
+        font-size: 14px;
+    }
+
+    .order-button {
+        width: 100%;
+        padding: 11px;
+    }
+
+
+    /* Contact */
+
+    .contact-item {
+        padding: 22px 15px;
+    }
+
+}
+
+
+/* =========================================
+   VERY SMALL PHONES
+   Below 320px
+========================================= */
+
+@media (max-width: 319px) {
+
+    .logo {
+        font-size: 19px;
+    }
+
+    .nav-button {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero-text {
+        font-size: 14px;
+    }
+
+    .section-heading h2,
+    .about-content h2 {
+        font-size: 27px;
+    }
+
+}
